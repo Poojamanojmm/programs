@@ -3,13 +3,15 @@
 <title>application form</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body bgcolor="white">
 <center>
 <h1 text-align="center"> REGISTERATION FORM</h1>
+<image src="/home/mca/Pictures/photo.jpg" width="90px" height="50px" align="left">
 </center>
-<form>
+<br><br>
+<form name="myForm" onsubmit="return validateForm();">
 <p>
-<label> NAME : <input type="text" /></label>
+<label> NAME : <input type="text"/></label><br>
 </p>
 <p>
 <label> ADDRESS: <input type="text"/></label>
@@ -18,6 +20,20 @@
 <label> DOB : <input type ="date"/></label>
 </p>
 <p>
+<label> GENDER :</label><br>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">male </label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">female</label><br>
+<input type="radio" id="others" name="gender" value="others">
+<label for="others">others</label><br><br>
+<label> Email :</label>
+<input type="email" name="email" id="email">
+</p>
+<p>
+<label> MOBILE NO :</label>
+<input type="text" size="2" value="+91">
+<input type="text" size="10"><br><br>
 <label> PREVIOUS COURSE : </label>
 <select name="previous course" id="degree">
 <option value="BCA">BCA</option>
@@ -42,9 +58,9 @@
 <label for="CREATIVITY">CREATIVITY</label><br>
 </p>
 <p>
-<button type="SUBMIT" onclick="buttonSubmit()" >SUBMIT</button>
+<button type="submit" />SUBMIT</button>
 </p>
-<script src="./script.js"></script>
+<script src="./script1.js"></script>
 </form>
 </body>
 </html>
