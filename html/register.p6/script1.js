@@ -1,4 +1,0 @@
-function buttonSubmit()
-{
-alert("successfull");
-}
