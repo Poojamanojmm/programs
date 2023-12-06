@@ -1,0 +1,8 @@
+f=open("test.txt","w")
+f.write("my first file\n")
+f.write("pooja mm \n")
+f.write("mananthara H \n")
+f=open("test.txt",'r')
+str=f.read()
+print("read strings:",str)
+f.close()

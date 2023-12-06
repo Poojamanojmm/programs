@@ -1,0 +1,11 @@
+a=[2,5,6,8]
+b=[4,7,9]
+print("a=",a)
+print("a=",a[1])
+print(len(a))
+a.append(3)
+print("a=",a)
+a.extend(b)
+print(a)
+print(max(a))
+print(min(a))
